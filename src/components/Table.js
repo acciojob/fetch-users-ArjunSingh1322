@@ -60,7 +60,7 @@ const Table = () => {
 
   return (
     <div>
-      <button onClick={handleFetch}>Load Users</button>
+      <button onClick={handleFetch} className="btn">Get User List</button>
 
       <table border="1" cellPadding="10" style={{ marginTop: "20px" }}>
         <thead>
@@ -86,7 +86,7 @@ const Table = () => {
             ))
           ) : (
             <tr>
-              <td colSpan="4" align="center">No data loaded</td>
+              <td colSpan="4" align="center">No data found</td>
             </tr>
           )}
         </tbody>
